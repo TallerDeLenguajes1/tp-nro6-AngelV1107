@@ -1,0 +1,34 @@
+Ejercicio 4
+
+- String es un tipo por referencia
+
+- C# tiene las siguientes secuncias de escape:
+
+\'   Comilla simple
+
+\"   Comilla doble
+
+\\   Barra invertida
+
+\a   Caracter de alerta
+
+\b   Backspace
+
+\f   Salto de página
+
+\n   Salto de línea
+
+\r   Retorno del carro
+
+\t   Tab horizontal
+
+\v   Vertical quote
+
+\uxxxx   Secuencia de escape para el caracter Unicode de valor haxadecimal xxxx
+
+\xn[n][n][n]   Secuencia de escape para el caracter Unicode de valor hexadecimal nnnn
+
+\Uxxxxxxxx   Secuencia de escape para el caracter Unicode de valor hexadecimal xxxxxxxx
+
+
+- Usar el @ antes de una una cadena de texto indica que la cadena se debe interpretar literalmente. Las secuencias de escape de se interpretan literalmente, a excepción de la secuencia de escape de comillas

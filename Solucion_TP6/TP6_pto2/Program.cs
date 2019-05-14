@@ -10,15 +10,35 @@ namespace TP6_pto2
     {
         static void Main(string[] args)
         {
+            calculadora();
+
+            Console.WriteLine("FIN DEL PROGRAMA");
+            Console.ReadLine();
+        }
+
+        public static void calculadora()
+        {
             char operacion;
             int a, b;
             char retry;
 
+            
             do
             {
-                Console.WriteLine("Escriba la operacion");
-                Console.WriteLine("(+, -, *, /)");
-                operacion = Convert.ToChar(Console.ReadLine());
+                operacion = '+';
+                do
+                {
+                    if (!((operacion == '+') || (operacion == '-') || (operacion == '*') || (operacion == '/')))
+                    {
+                        Console.WriteLine("Entrada invalida");
+                    }
+
+                    Console.WriteLine("Escriba la operacion");
+                    Console.WriteLine("(+, -, *, /)");
+                    operacion = Convert.ToChar(Console.ReadLine());
+
+                } while ( !( (operacion == '+') || (operacion == '-') || (operacion == '*') || (operacion == '/') ) );
+
 
                 Console.WriteLine("Escriba el primer número");
                 a = Convert.ToInt32(Console.ReadLine());
@@ -67,12 +87,11 @@ namespace TP6_pto2
 
                     Console.WriteLine("Intentar otra operacion? Y/N");
                     retry = Convert.ToChar(Console.ReadLine());
+                    retry = Char.ToUpper(retry);
                 } while ((retry != 'Y') && (retry != 'N'));
 
             } while (retry == 'Y');
 
-            Console.WriteLine("FIN DEL PROGRAMA");
-            Console.ReadLine();
         }
     }
 }
