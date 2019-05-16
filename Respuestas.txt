@@ -32,3 +32,12 @@ Ejercicio 4
 
 
 - Usar el @ antes de una una cadena de texto indica que la cadena se debe interpretar literalmente. Las secuencias de escape de se interpretan literalmente, a excepción de la secuencia de escape de comillas
+
+
+Ejercicio 5
+
+- Las expresiones regulares no sólo funcionan en C#
+
+- Pueden ser útiles para validar la entrada de datos del usuario, identificar palabras en un motor de búsqueda, reemplazar ocurrencias de una palabra en una cadena de texto, etc.
+
+- Para usarlas se usar la librería System.Text.RegularExpressions, crear una cadena de texto con el formato del patrón de la expresión regular, y usar las funciones de librería para analizar o modificar una cadena usando el patrón
